@@ -7,7 +7,9 @@ void setup()
   fullScreen();
   println (displayWidth, displayHeight);
   //Landscape, not portrait nor square
-  String displayOrientation = ( width >= height ) ? "You are good to go!" : "Bruhh, turn your phone" ;
+  String landscape = "You are good to go!";
+  String portrait = "Bruhh, turn your phone";
+  String displayOrientation = ( width >= height ) ? landscape : portrait ;
   if ( width < height ) println ( displayOrientation ); //Portrait DisplayOrientation
   if ( width >= height ) appWidth = width; //option displayWidth
   if ( width >= height ) appHeight = height; //option displayHeight
