@@ -10,9 +10,10 @@ void setup()
   String landscape = "You are good to go!";
   String portrait = "Bruhh, turn your phone";
   String displayOrientation = ( width >= height ) ? landscape : portrait ;
-  if ( width < height ) println ( displayOrientation ); //Portrait DisplayOrientation
-  if ( width >= height ) appWidth = width; //option displayWidth
-  if ( width >= height ) appHeight = height; //option displayHeight
+  if (  displayOrientation==portrait ) println ( displayOrientation ); //Portrait DisplayOrientation
+  if ( displayOrientation==landscape ) appWidth = width; //option displayWidth
+  if ( displayOrientation==landscape ) appHeight = height; //option displayHeight
+  println (appWidth, appHeight); //will be NULL if portrait... until landscape (future lesson)
   
 }//End setup 
 //
