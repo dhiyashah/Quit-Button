@@ -23,11 +23,17 @@ void setup()
   quitButtonY = canvasCenter - appHeight*1/4;
   quitButtonWidth = appWidth*1/2 ;
   quitButtonHeight = appHeight*1/2 ;
+  
 }//End setup 
 //
 void draw() 
 {
-  buttonColour = purple; //yellow
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) {
+    buttonColour = yellow;
+  } else {
+    buttonColour = purple;
+  }
+  buttonColour = yellow; //yellow, purple, resetWhite
   fill(buttonColour);
   rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight );
   fill(resetWhite);
