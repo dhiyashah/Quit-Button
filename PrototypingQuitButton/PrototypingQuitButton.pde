@@ -1,8 +1,15 @@
 //Global Variables
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+appWidth, appHeight
 //
 void setup() 
 {
+  fullScreen();
+  println(displayWidth, displayHeight);
+  //Landscape, not portrait nor square
+  String displayOrientation = (width >= height) ? "Landscape or Square" : "Portrait" ;
+  appWidth = ;
+  appHeight = ;
   
 }//End setup 
 //
