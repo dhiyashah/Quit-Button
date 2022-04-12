@@ -2,7 +2,7 @@
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 color yellow=#FEFF00, purple=#BD00DB, buttonColour; //Notice NightMode Blue Values 
 //
-void quitButtonSetupPopulation(int centerX, centerY) { //ignore Parameter concept
+void quitButtonSetupPopulation(int centerX, int centerY) { //ignore Parameter concept
   quitButtonX = centerX - appWidth*1/4; //1/4 on one-half, 1/4 on other half
   quitButtonY = centerY - appHeight*1/4;
   quitButtonWidth = appWidth*1/2 ;

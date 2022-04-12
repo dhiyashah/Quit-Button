@@ -1,4 +1,4 @@
-void(population) {
+void population() {
   //Population
   //Note: vairables similar to Face Rect() on Measles
   int centerX = appWidth*1/2;
