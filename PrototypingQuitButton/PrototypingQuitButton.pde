@@ -1,7 +1,5 @@
 //Global Variables
 int appWidth, appHeight;
-float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-color yellow=#FEFF00, purple=#BD00DB, resetWhite=#FFFFFF, buttonColour;
 //
 void setup() 
 {
@@ -32,8 +30,10 @@ void draw()
     buttonColour = yellow;
   } else {
     buttonColour = purple;
-  }
-  buttonColour = yellow; //yellow, purple, resetWhite
+  }//End Hover-Over Effect 
+  println("X-value", quitButtonX, mouseX, quitButtonX+quitButtonWidth, "\t\t Look at the middle value");
+  println("Y-value", quitButtonY, mouseY, quitButtonY+quitButtonHeight, "\t\t Look at the middle value");
+  //
   fill(buttonColour);
   rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight );
   fill(resetWhite);
@@ -47,7 +47,7 @@ void keyPressed()
 //
 void mousePressed() 
 {
-  
+  if (mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) exit();
 }//End mousePressed
 //
 //End Main Program
