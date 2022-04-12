@@ -8,12 +8,6 @@ void setup()
   fullScreen();
   println (displayWidth, displayHeight);
   //Landscape, not portrait nor square
-  String landscape = "You are good to go!";
-  String portrait = "Bruhh, turn your phone";
-  String displayOrientation = ( width >= height ) ? landscape : portrait ;
-  if (  displayOrientation==portrait ) println ( displayOrientation ); //Portrait DisplayOrientation
-  if ( displayOrientation==landscape ) appWidth = width; //option displayWidth
-  if ( displayOrientation==landscape ) appHeight = height; //option displayHeight
   println (appWidth, appHeight); //will be NULL if portrait... until landscape (future lesson)
   //
   //Note: variables similar to Face Rect() on Measles
